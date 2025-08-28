@@ -15,7 +15,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bigNumber = 3456543576654356754n
 
@@ -36,9 +36,34 @@ const myFunction = function () {
     console.log("Hello world");
 }
 
-console.log(typeof bigNumber);
-console.log(typeof outsideTemp);
-console.log(typeof myFunction);
-console.log(typeof anotherId);
+// console.log(typeof bigNumber);
+// console.log(typeof outsideTemp);
+// console.log(typeof myFunction);
+// console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// ++++++++++++++++++++++++++++++
+
+// Stack(Primitive), Heap(Non-primitive)
+
+let myName = "siddharth mishra"
+let anotherName = myName
+anotherName = "hello world"
+console.log(myName)
+console.log(anotherName)
+
+let user1 = {
+    email: "user@gmail.com",
+    upi: "user@ybl.co"
+}
+
+let user2 = user1
+
+user2.email = "user2@.co.in"
+
+console.log(user1.email)
+console.log(user2.email)
+
