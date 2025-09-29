@@ -199,7 +199,7 @@ window.addEventListener('keydown', (e) => {
 
 ```
 
-# project solution 6
+# project 6 solution
 
 ```javascript
 //generate a random color
